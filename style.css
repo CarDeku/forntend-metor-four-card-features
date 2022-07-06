@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    padding: 80px 40px;
+}
+
+.header{
+    max-width: 340px;
+    margin: 0 auto 70px;
+}
+
+.header__subtitle {
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.header__title {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.header__paragraph {
+    color: var(--Grayish-Blue);
+}
+
+.card__container{
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 10px 15px rgb(216, 217, 228);
+    height: 222px;
+    margin: 0 auto 25px;
+    max-width:320px;
+    min-width: 300px;
+}
+
+.sub__container{
+    margin-bottom: 24px;
+    padding: 25px 30px;
+}
+.line1{
+    background: var(--Cyan);
+    width: 100%;
+    height: 3px;
+}
+.line2{
+    background: var(--Red);
+    width: 100%;
+    height: 3px;
+}
+.line3{
+    background: var(--Orange);
+    width: 100%;
+    height: 3px;
+}
+.line4{
+    background: var(--Blue);
+    width: 100%;
+    height: 3px;
+}
+
+.sub__container-title{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.sub__container__paragraph{
+    font-size: .8em;
+    line-height: 1.8em;
+    word-spacing: 3px;
+    font-weight: 200;
+    color: var(----Grayish-Blue);
+}
+
+.figure__image{
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 20px;    
+}
+.img{
+    width: 55px;
+}
+
+@media (min-width: 1200px){
+    .header{
+        max-width:510px;
+        text-align: center;
+        margin: 0px auto 70px;
+    }
+    .header__subtitle, .header__title{
+        font-size: 2.5rem;
+    }
+    .cards__container{
+        display: flex;
+        align-items: center;
+        max-width:1253px;
+        margin: 0px auto
+
+    }
+    .card__container, .sub__container{
+        max-width: 382px;
+        width: 353px;
+        height:252px;
+    }
+
+    .img{
+       width: 70px;
+    }
+  
+}
+
